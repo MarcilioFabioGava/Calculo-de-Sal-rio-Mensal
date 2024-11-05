@@ -1,0 +1,26 @@
+/*Faça um algoritmo que leia quanto você ganha por hora e o número de horas trabalhadas no
+mês. Na sequência, calcule e mostre o total do seu salário no referido mês.*/
+
+#include <stdio.h>
+
+int main(){
+    
+    float salario,horasTrabalhadas, valorHorasTrabalhadas, horasDia, diaMes;
+    
+    printf("\nDigite o valor que você ganha por horas de trabalho: ");
+    scanf("%f", &valorHorasTrabalhadas);
+    
+    printf("Quantas horas por dia você trabalha?: ");
+    scanf("%f", &horasDia);
+    
+    printf("Quantas dias no mês você trabalhou: ");
+    scanf("%f", &diaMes);
+
+    horasTrabalhadas = horasDia * diaMes;
+    salario = valorHorasTrabalhadas * horasTrabalhadas;
+    
+    printf("\nO valor do seu salário nesse mês foi de: R$%.2f \n", salario);
+    printf("\nForam trabalhadas %.f horas e o valor das horas é de R$%.f.", horasTrabalhadas, valorHorasTrabalhadas);
+    
+    return 0;
+}
